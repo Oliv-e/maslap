@@ -14,13 +14,13 @@ class data_awal extends Seeder
      */
     public function run()
     {
-        $storeadmin = new User();
-        $storeadmin->name = 'Admin';
-        $storeadmin->email = 'admin@app.com';
-        $storeadmin->password = bcrypt('12345678');
-        $storeadmin->level = 'admin';
-        $storeadmin->nik = '6171123443211234';
-        $storeadmin->hp = '081234123412';
+        $storeadmin             = new User();
+        $storeadmin->name       = 'Admin';
+        $storeadmin->email      = 'admin@app.com';
+        $storeadmin->password   = bcrypt('12345678');
+        $storeadmin->level      = 'admin';
+        $storeadmin->nik        = '6171123443211234';
+        $storeadmin->hp         = '081234123412';
         $storeadmin->save();
     }
 }
